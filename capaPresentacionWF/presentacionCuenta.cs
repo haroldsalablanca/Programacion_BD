@@ -12,7 +12,6 @@ namespace capaPresentacionWF
 {
     public partial class presentacionCuenta : Form
     {
-        
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
