@@ -10,9 +10,14 @@ using System.Windows.Forms;
 
 namespace capaPresentacionWF
 {
-    public partial class presentacionCuenta : Form
+    public partial class fComentarios : Form
     {
-        private void tabPage1_Click(object sender, EventArgs e)
+        public fComentarios()
+        {
+            InitializeComponent();
+        }
+
+        private void PresentacionComentarios_Load(object sender, EventArgs e)
         {
 
         }

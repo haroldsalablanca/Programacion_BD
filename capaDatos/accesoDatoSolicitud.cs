@@ -22,7 +22,7 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("solicitud", cnx);
+                cm = new SqlCommand("Solicitar", cnx);
                 cm.Parameters.AddWithValue("@b", 1);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", S.aula);
@@ -57,7 +57,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
-                cm = new SqlCommand("solicitud", cnx);
+                cm = new SqlCommand("Solicitar", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", "");
@@ -111,7 +111,7 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Solicitar", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@idsolicitud", idsolicit);
                 cm.Parameters.AddWithValue("@aula", "");
@@ -182,7 +182,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Solicitar", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", dato);

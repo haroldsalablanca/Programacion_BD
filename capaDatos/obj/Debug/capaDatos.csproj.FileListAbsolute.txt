@@ -5,3 +5,10 @@ C:\Users\harol\Desktop\2020\Programacion en Base de Datos\Proyectos\ProgamacionB
 C:\Users\harol\Desktop\2020\Programacion en Base de Datos\Proyectos\ProgamacionBD\capaDatos\obj\Debug\capaDatos.csprojResolveAssemblyReference.cache
 C:\Users\harol\Desktop\2020\Programacion en Base de Datos\Proyectos\ProgamacionBD\capaDatos\obj\Debug\capaDatos.dll
 C:\Users\harol\Desktop\2020\Programacion en Base de Datos\Proyectos\ProgamacionBD\capaDatos\obj\Debug\capaDatos.pdb
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\bin\Debug\capaDatos.dll
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\bin\Debug\capaDatos.pdb
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\bin\Debug\capaEntidades.dll
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\bin\Debug\capaEntidades.pdb
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\obj\Debug\capaDatos.csprojResolveAssemblyReference.cache
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\obj\Debug\capaDatos.dll
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaDatos\obj\Debug\capaDatos.pdb

@@ -10,30 +10,30 @@ namespace capaNegocio
 {
     public class logicaNegocioRecursos
     {
-        accesoDatoRecursos ac = new accesoDatoRecursos();
-        public int insertarRecursos(Recursos co)
+        accesoDatoRecursos ar = new accesoDatoRecursos();
+        public int insertarRecursos(Recursos re)
         {
-            return ac.insertarRecursos(co);
+            return ar.insertarRecursos(re);
         }
 
         public List<Recursos> listarRecursos()
         {
-            return ac.listarRecursos();
+            return ar.listarRecursos();
         }
 
-        public int eliminarRecurosos(int idcoment)
+        public int eliminarRecursos(int idcoment)
         {
-            return ac.eliminarRecursos(idcoment);
+            return ar.eliminarRecursos(idcoment);
         }
 
         public int editarRecursos(Recursos re)
         {
-            return ac.editarRecursos(re);
+            return ar.editarRecursos(re);
         }
 
         public List<Recursos> buscarRecursos(string dato)
         {
-            return ac.buscarRecursos(dato);
+            return ar.buscarRecursos(dato);
         }
     }
 }

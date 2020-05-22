@@ -6,10 +6,10 @@ using System.Data;
 
 namespace capaDatos
 {
-    public class accesoDatoComentario
+    public class accesoDatoComentarios
     {
         SqlConnection cnx;
-        Comentarios s = new Comentarios();
+        Comentarios c = new Comentarios();
         Conexion cn = new Conexion();
         SqlCommand cm = null;
         int indicador = 0;
@@ -80,9 +80,7 @@ namespace capaDatos
                 listaComentarios = null;
             }
             finally
-            {
-                cm.Connection.Close();
-            }
+            {cm.Connection.Close();}
             return listaComentarios;
 
         }
@@ -141,9 +139,7 @@ namespace capaDatos
             }
 
             finally
-            {
-                cm.Connection.Close();
-            }
+            {cm.Connection.Close();}
             return indicador;
         }
 

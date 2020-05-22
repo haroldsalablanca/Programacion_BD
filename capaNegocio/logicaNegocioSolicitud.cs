@@ -10,30 +10,30 @@ namespace capaNegocio
 {
     class logicaNegocioSolicitud
     {
-        accesoDatoSolicitud ac = new accesoDatoSolicitud();
-        public int insertarSolicitud(Solicitud co)
+        accesoDatoSolicitud ads = new accesoDatoSolicitud();
+        public int insertarSolicitud(Solicitud S)
         {
-            return ac.insertarSolicitud(co);
+            return ads.insertarSolicitud(S);
         }
 
-        public List<Solicitud> listarSolicitudes()
+        public List<Solicitud> listarSolicitud()
         {
-            return ac.listarSolicitud();
+            return ads.listarSolicitud();
         }
 
         public int eliminarSolicitud(int idcoment)
         {
-            return ac.eliminarSolicitud(idcoment);
+            return ads.eliminarSolicitud(idcoment);
         }
 
         public int editarSolicitud(Solicitud S)
         {
-            return ac.editarSolicitud(S);
+            return ads.editarSolicitud(S);
         }
 
         public List<Solicitud> buscarSolicitud(string dato)
         {
-            return ac.buscarSolicitud(dato);
+            return ads.buscarSolicitud(dato);
         }
     }
 }

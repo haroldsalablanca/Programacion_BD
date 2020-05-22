@@ -10,30 +10,30 @@ namespace capaNegocio
 {
     class logicaNegocioCuenta
     {
-        accesoDatoCuenta ac = new accesoDatoCuenta();
+        accesoDatoCuenta adc = new accesoDatoCuenta();
         public int insertarCuentas(Cuenta C)
         {
-            return ac.insertarCuentas(C);
+            return adc.insertarCuentas(C);
         }
 
         public List<Cuenta> listarCuentas()
         {
-            return ac.listarCuentas();
+            return adc.listarCuentas();
         }
 
         public int eliminarCuentas(int idcoment)
         {
-            return ac.eliminarCuentas(idcoment);
+            return adc.eliminarCuentas(idcoment);
         }
 
         public int editarCuentas(Cuenta C)
         {
-            return ac.editarCuentas(C);
+            return adc.editarCuentas(C);
         }
 
         public List<Cuenta> buscarCuentas(string dato)
         {
-            return ac.buscarCuentas(dato);
+            return adc.buscarCuentas(dato);
         }
     }
 }

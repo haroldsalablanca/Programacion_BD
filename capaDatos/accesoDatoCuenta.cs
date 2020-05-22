@@ -66,7 +66,7 @@ namespace capaDatos
                 while (dr.Read())
                 {
                     Cuenta c = new Cuenta();
-                    c.idCuenta = Convert.ToInt32(dr["idcomentario"].ToString());
+                    c.idCuenta = Convert.ToInt32(dr["idCuenta"].ToString());
                     c.nombreuser = dr["nombreuser"].ToString();
                     c.clave = dr["clave"].ToString();
                     c.rol = dr["rol"].ToString();
@@ -93,7 +93,7 @@ namespace capaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Cuenta", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@idCuenta", idcuent);
                 cm.Parameters.AddWithValue("@nombreuser", "");
@@ -152,7 +152,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Cuenta", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idCuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", dato);

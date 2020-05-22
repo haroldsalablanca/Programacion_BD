@@ -40,7 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="accesoDatoComentario.cs" />
+    <Compile Include="accesoDatoComentarios.cs" />
     <Compile Include="accesoDatoCuenta.cs" />
     <Compile Include="accesoDatoRecursos.cs" />
     <Compile Include="accesoDatoSolicitud.cs" />

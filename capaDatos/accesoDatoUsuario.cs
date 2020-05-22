@@ -48,48 +48,48 @@ namespace capaDatos
             return indicador;
         }
 
-        //public List<Usuario> listarUsuarios()
-        //{
-        //    try
-        //    {
-        //        SqlConnection cnx = cn.conectar();
-        //        cm = new SqlCommand("Usuario", cnx);
-        //        cm.Parameters.AddWithValue("@b", 3);
-        //        cm.Parameters.AddWithValue("@idusuario", "");
-        //        cm.Parameters.AddWithValue("@cedula", "");
-        //        cm.Parameters.AddWithValue("@nombre", "");
-        //        cm.Parameters.AddWithValue("@apellidos", "");
-        //        cm.Parameters.AddWithValue("@email", "");
-        //        cm.Parameters.AddWithValue("@telefono", "");
+        public List<Usuario> listarUsuarios()
+        {
+            try
+            {
+                SqlConnection cnx = cn.conectar();
+                cm = new SqlCommand("Usuario", cnx);
+                cm.Parameters.AddWithValue("@b", 3);
+                cm.Parameters.AddWithValue("@idusuario", "");
+                cm.Parameters.AddWithValue("@cedula", "");
+                cm.Parameters.AddWithValue("@nombre", "");
+                cm.Parameters.AddWithValue("@apellidos", "");
+                cm.Parameters.AddWithValue("@email", "");
+                cm.Parameters.AddWithValue("@telefono", "");
 
-        //        cm.CommandType = CommandType.StoredProcedure;
-        //        cnx.Open();
-        //        dr = cm.ExecuteReader();
-        //        listaUsuarios = new List<Usuario>();
-        //        while (dr.Read())
-        //        {
-        //            Usuario c = new Usuario();
-        //            c.idusuario = Convert.ToInt32(dr["idsolicitud"].ToString());
-        //            c.cedula = dr["cedula"].ToString();
-        //            c.nombre = dr["nombre"].ToString();
-        //            c.apellidos = dr["apellidos"].ToString();    
-        //            c.email = dr["apellidos"].ToString();                
-        //            c.telefono = dr["telefono"].ToString();            
-        //            listaUsuarios.Add(c);
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        e.Message.ToString();
-        //        listaUsuarios = null;
-        //    }
-        //    finally
-        //    {
-        //        cm.Connection.Close();
-        //    }
-        //    return listaUsuarios;
+                cm.CommandType = CommandType.StoredProcedure;
+                cnx.Open();
+                dr = cm.ExecuteReader();
+                listaUsuarios = new List<Usuario>();
+                while (dr.Read())
+                {
+                    Usuario c = new Usuario();
+                    c.idusuario = Convert.ToInt32(dr["idsolicitud"].ToString());
+                    c.cedula = dr["cedula"].ToString();
+                    c.nombre = dr["nombre"].ToString();
+                    c.apellidos = dr["apellidos"].ToString();
+                    c.email = dr["apellidos"].ToString();
+                    c.telefono = dr["telefono"].ToString();
+                    listaUsuarios.Add(c);
+                }
+            }
+            catch (Exception e)
+            {
+                e.Message.ToString();
+                listaUsuarios = null;
+            }
+            finally
+            {
+                cm.Connection.Close();
+            }
+            return listaUsuarios;
 
-        //}
+        }
 
         public int eliminarUsuario(int iduser)
         {

@@ -1,6 +1,6 @@
 ﻿namespace capaPresentacionWF
 {
-    partial class presentacionCuenta
+    partial class fCuentas
     {
         /// <summary>
         /// Required designer variable.

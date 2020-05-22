@@ -20,8 +20,7 @@ namespace capaPresentacionWF
             InitializeComponent();
         }
 
-        public static TabPage SelectedTab { get; private set; } //Consultar
-
+       
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -38,9 +37,9 @@ namespace capaPresentacionWF
                         MessageBox.Show("Agregado con éxito");
                         dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
                         textBoxNombrer.Text = "";
-                        textBoxDescripcion.Text = "";
                         textBoxCodigo.Text = "";
-                        tabRecursos.SelectedTab = tabPage2; //Consultar
+                        textBoxDescripcion.Text = "";
+                        tabControl1.SelectedTab = tabPage2; //Consultar
                     }
                     else { MessageBox.Show("Error al agregar Recurso"); }
                 }
@@ -59,7 +58,7 @@ namespace capaPresentacionWF
                         textBoxNombrer.Text = "";
                         textBoxCodigo.Text = "";
                         textBoxDescripcion.Text = "";
-                        tabRecursos.SelectedTab = tabPage2;
+                        tabControl1.SelectedTab = tabPage2;
                     }
                     else
                     {
@@ -74,73 +73,52 @@ namespace capaPresentacionWF
             }
         }
 
+        //Ocultar Id cuando se agrega un nuevo Recursos "Se agrega por defecto"
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = false;
+            labelId.Visible = false;
+            dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
+        }
 
-
-
-
-        //Boton guardar en detalle
+        //Boton Buscar en Detalle
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    if (buttonBuscar.Text == "Buscar")
-            //    {
-            //        Recursos objetoRecurso = new Recursos();
-            //        objetoRecurso.nombrer = textBoxNombrer.Text;
-            //        objetoRecurso.codigo = textBoxCodigo.Text;
-            //        objetoRecurso.descripcion = textBoxDescripcion.Text;
-
-            //        if (logicaNR.insertarRecursos(objetoRecurso) > 0)
-            //        {
-            //            MessageBox.Show("Agregado con éxito");
-            //            dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
-            //            textBoxNombrer.Text = "";
-            //            textBoxDescripcion.Text = "";
-            //            textBoxCodigo.Text = "";
-            //            tabRecursos.SelectedTab = tabPage2; //Consultar
-            //        }
-            //        else { MessageBox.Show("Error al agregar Recurso"); }
-            //    }
-            //    if (buttonGuardar.Text == "Actualizar")
-            //    {
-            //        Recursos objetoRecurso = new Recursos();
-            //        objetoRecurso.idrecursos = Convert.ToInt32(textBoxId.Text);
-            //        objetoRecurso.nombrer = textBoxNombrer.Text;
-            //        objetoRecurso.codigo = textBoxCodigo.Text;
-            //        objetoRecurso.descripcion = textBoxDescripcion.Text;
-
-            //        if (logicaNR.editarRecursos(objetoRecurso) > 0)
-            //        {
-            //            MessageBox.Show("Actualizado con éxito");
-            //            dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
-            //            textBoxNombrer.Text = "";
-            //            textBoxCodigo.Text = "";
-            //            textBoxDescripcion.Text = "";
-            //            tabRecursos.SelectedTab = tabPage2;
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Error al actualizar Recurso");
-            //        }
-            //        buttonGuardar.Text = "Guardar";
-            //    }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("ERROR");
-            //}
-
-
+            List<Recursos> listaRecursos = logicaNR.buscarRecursos(textBoxBuscar.Text);
+            dataGridViewRecursos.DataSource = listaRecursos;
         }
 
-        private void textBoxId_TextChanged(object sender, EventArgs e)
+        private void buttonEditar_Click(object sender, EventArgs e)
         {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = false;
+            labelId.Visible = true;
 
+            textBoxId.Text = dataGridViewRecursos.CurrentRow.Cells["idrecursos"].Value.ToString();
+            textBoxNombrer.Text = dataGridViewRecursos.CurrentRow.Cells["nombrer"].Value.ToString();
+            textBoxCodigo.Text = dataGridViewRecursos.CurrentRow.Cells["codigo"].Value.ToString();
+            textBoxDescripcion.Text = dataGridViewRecursos.CurrentRow.Cells["descripcion"].Value.ToString();
+
+            tabControl1.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
         }
 
-        private void tabRecursos_Load(object sender, EventArgs e)
+        private void buttonEliminar_Click(object sender, EventArgs e)
         {
-
+            int codigoR = Convert.ToInt32(dataGridViewRecursos.CurrentRow.Cells["idrecursos"].Value.ToString());
+            try
+            {
+                if (logicaNR.eliminarRecursos(codigoR) > 0)
+                {
+                    MessageBox.Show("Eliminado con éxito!");
+                    dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ERROR al elminar recurso");
+            }
         }
+
     }
 }

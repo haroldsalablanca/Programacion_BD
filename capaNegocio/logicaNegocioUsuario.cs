@@ -10,31 +10,30 @@ namespace capaNegocio
 {
     class logicaNegocioUsuario
     {
-        accesoDatoUsuario ac = new accesoDatoUsuario();
-        public int insertarUsuarios(Usuario co)
+        accesoDatoUsuario adu = new accesoDatoUsuario();
+        public int insertarUsuarios(Usuario U)
         {
-            return ac.insertarUsuarios(co);
+            return adu.insertarUsuarios(U);
         }
 
-        //public List<Usuario> listarUsuarios()
-        //{
-        //    return ac.listarUsuarios();
-        //}
+        public List<Usuario> listarUsuarios()
+        {
+            return adu.listarUsuarios();
+        }
 
         public int eliminarUsuario(int iduser)
         {
-            return ac.eliminarUsuario(iduser);
+            return adu.eliminarUsuario(iduser);
         }
 
         public int editarUsuario(Usuario U)
         {
-            return ac.editarUsuario(U);
+            return adu.editarUsuario(U);
         }
 
         public List<Usuario> buscarUsuarios(string dato)
-
         {
-            return ac.buscarUsuarios(dato);
+            return adu.buscarUsuarios(dato);
         }
     }
 }

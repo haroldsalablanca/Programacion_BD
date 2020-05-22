@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="presentacionComentarios.cs">
+    <Compile Include="fComentarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacionComentarios.Designer.cs">
-      <DependentUpon>presentacionComentarios.cs</DependentUpon>
+    <Compile Include="fComentarios.Designer.cs">
+      <DependentUpon>fComentarios.cs</DependentUpon>
     </Compile>
     <Compile Include="fRecursos.cs">
       <SubType>Form</SubType>
@@ -58,22 +58,22 @@
     <Compile Include="fRecursos.Designer.cs">
       <DependentUpon>fRecursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="presentacionCuenta.cs">
+    <Compile Include="fCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacionCuenta.Designer.cs">
-      <DependentUpon>presentacionCuenta.cs</DependentUpon>
+    <Compile Include="fCuentas.Designer.cs">
+      <DependentUpon>fCuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="presentacionComentarios.resx">
-      <DependentUpon>presentacionComentarios.cs</DependentUpon>
+    <EmbeddedResource Include="fComentarios.resx">
+      <DependentUpon>fComentarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRecursos.resx">
       <DependentUpon>fRecursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="presentacionCuenta.resx">
-      <DependentUpon>presentacionCuenta.cs</DependentUpon>
+    <EmbeddedResource Include="fCuentas.resx">
+      <DependentUpon>fCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,7 +10,7 @@ namespace capaNegocio
 {
     public class logicaNegocioComentarios
     {
-        accesoDatoComentario ac = new accesoDatoComentario();
+        accesoDatoComentarios ac = new accesoDatoComentarios();
         public int insertarComentarios(Comentarios co)
         {
             return ac.insertarComentarios(co);
@@ -35,7 +35,5 @@ namespace capaNegocio
         {
             return ac.buscarComentarios(dato);
         }
-
     }
-
 }
