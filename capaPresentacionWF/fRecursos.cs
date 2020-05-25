@@ -18,9 +18,7 @@ namespace capaPresentacionWF
         public tabRecursos()
         {
             InitializeComponent();
-        }
-
-       
+        }      
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             try
@@ -28,6 +26,7 @@ namespace capaPresentacionWF
                 if (buttonGuardar.Text == "Guardar")
                 {
                     Recursos objetoRecurso = new Recursos();
+                  //objetoRecurso.idrecursos = textBoxId.Text;
                     objetoRecurso.nombrer = textBoxNombrer.Text;
                     objetoRecurso.codigo = textBoxCodigo.Text;
                     objetoRecurso.descripcion = textBoxDescripcion.Text;
@@ -36,6 +35,7 @@ namespace capaPresentacionWF
                     {
                         MessageBox.Show("Agregado con éxito");
                         dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
+                      //textBoxId.Text = "";
                         textBoxNombrer.Text = "";
                         textBoxCodigo.Text = "";
                         textBoxDescripcion.Text = "";
@@ -57,7 +57,7 @@ namespace capaPresentacionWF
                         dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
                         textBoxNombrer.Text = "";
                         textBoxCodigo.Text = "";
-                        textBoxDescripcion.Text = "";
+                        textBoxDescripcion.Text = "";   
                         tabControl1.SelectedTab = tabPage2;
                     }
                     else
@@ -81,7 +81,7 @@ namespace capaPresentacionWF
             dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
         }
 
-        //Boton Buscar en Detalle
+        //Boton Buscar en Detalle de Recursos
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
             List<Recursos> listaRecursos = logicaNR.buscarRecursos(textBoxBuscar.Text);
@@ -119,6 +119,5 @@ namespace capaPresentacionWF
                 MessageBox.Show("ERROR al elminar recurso");
             }
         }
-
     }
 }

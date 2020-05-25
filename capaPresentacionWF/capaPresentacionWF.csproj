@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,8 +65,29 @@
     <Compile Include="fCuentas.Designer.cs">
       <DependentUpon>fCuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSolicitud.Designer.cs">
+      <DependentUpon>fSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUsuario.Designer.cs">
+      <DependentUpon>fUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIRecursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIRecursos.Designer.cs">
+      <DependentUpon>MDIRecursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fComentarios.cs.resx">
+      <DependentUpon>fComentarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fComentarios.resx">
       <DependentUpon>fComentarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +96,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fCuentas.resx">
       <DependentUpon>fCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSolicitud.resx">
+      <DependentUpon>fSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUsuario.resx">
+      <DependentUpon>fUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIRecursos.resx">
+      <DependentUpon>MDIRecursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.buttonGuardar = new System.Windows.Forms.Button();
@@ -59,13 +57,12 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(495, 340);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPage1
             // 
@@ -81,10 +78,10 @@
             this.tabPage1.Controls.Add(this.labelId);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(487, 314);
+            this.tabPage1.Size = new System.Drawing.Size(487, 312);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
             // 
@@ -112,21 +109,21 @@
             // 
             this.textBoxCodigo.Location = new System.Drawing.Point(152, 144);
             this.textBoxCodigo.Name = "textBoxCodigo";
-            this.textBoxCodigo.Size = new System.Drawing.Size(214, 20);
+            this.textBoxCodigo.Size = new System.Drawing.Size(214, 21);
             this.textBoxCodigo.TabIndex = 7;
             // 
             // textBoxNombrer
             // 
             this.textBoxNombrer.Location = new System.Drawing.Point(152, 105);
             this.textBoxNombrer.Name = "textBoxNombrer";
-            this.textBoxNombrer.Size = new System.Drawing.Size(214, 20);
+            this.textBoxNombrer.Size = new System.Drawing.Size(214, 21);
             this.textBoxNombrer.TabIndex = 6;
             // 
             // textBoxId
             // 
             this.textBoxId.Location = new System.Drawing.Point(152, 72);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(214, 20);
+            this.textBoxId.Size = new System.Drawing.Size(214, 21);
             this.textBoxId.TabIndex = 5;
             // 
             // labelDescripcion
@@ -145,7 +142,7 @@
             this.labelCodigo.AutoSize = true;
             this.labelCodigo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCodigo.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelCodigo.Location = new System.Drawing.Point(53, 147);
+            this.labelCodigo.Location = new System.Drawing.Point(81, 144);
             this.labelCodigo.Name = "labelCodigo";
             this.labelCodigo.Size = new System.Drawing.Size(61, 19);
             this.labelCodigo.TabIndex = 3;
@@ -156,7 +153,7 @@
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombre.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelNombre.Location = new System.Drawing.Point(53, 112);
+            this.labelNombre.Location = new System.Drawing.Point(73, 104);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(68, 19);
             this.labelNombre.TabIndex = 2;
@@ -167,7 +164,7 @@
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelId.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelId.Location = new System.Drawing.Point(53, 79);
+            this.labelId.Location = new System.Drawing.Point(112, 74);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(23, 19);
             this.labelId.TabIndex = 1;
@@ -186,39 +183,24 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
             this.tabPage2.Controls.Add(this.dataGridViewRecursos);
             this.tabPage2.Controls.Add(this.labelBuscar);
             this.tabPage2.Controls.Add(this.textBoxBuscar);
             this.tabPage2.Controls.Add(this.buttonEliminar);
             this.tabPage2.Controls.Add(this.buttonBuscar);
             this.tabPage2.Controls.Add(this.buttonEditar);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(487, 314);
+            this.tabPage2.Size = new System.Drawing.Size(487, 312);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalle";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridViewRecursos
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRecursos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewRecursos.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewRecursos.Location = new System.Drawing.Point(29, 76);
             this.dataGridViewRecursos.Name = "dataGridViewRecursos";
             this.dataGridViewRecursos.Size = new System.Drawing.Size(438, 220);
@@ -227,10 +209,10 @@
             // labelBuscar
             // 
             this.labelBuscar.AutoSize = true;
-            this.labelBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuscar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.labelBuscar.Location = new System.Drawing.Point(37, 35);
             this.labelBuscar.Name = "labelBuscar";
-            this.labelBuscar.Size = new System.Drawing.Size(56, 16);
+            this.labelBuscar.Size = new System.Drawing.Size(54, 17);
             this.labelBuscar.TabIndex = 4;
             this.labelBuscar.Text = "Buscar";
             // 
@@ -238,12 +220,12 @@
             // 
             this.textBoxBuscar.Location = new System.Drawing.Point(96, 34);
             this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(119, 20);
+            this.textBoxBuscar.Size = new System.Drawing.Size(119, 21);
             this.textBoxBuscar.TabIndex = 3;
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.buttonEliminar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.buttonEliminar.Location = new System.Drawing.Point(382, 33);
             this.buttonEliminar.Name = "buttonEliminar";
@@ -255,7 +237,7 @@
             // 
             // buttonBuscar
             // 
-            this.buttonBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuscar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.buttonBuscar.Location = new System.Drawing.Point(220, 33);
             this.buttonBuscar.Name = "buttonBuscar";
@@ -267,7 +249,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.buttonEditar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.buttonEditar.Location = new System.Drawing.Point(301, 33);
             this.buttonEditar.Name = "buttonEditar";

@@ -29,5 +29,11 @@ C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\bin\Debu
 C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\bin\Debug\capaDatos.pdb
 C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.exe
 C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.pdb
-C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fComentarios.resources
 C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fCuentas.resources
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\bin\Debug\cs\capaPresentacionWF.resources.dll
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fComentarios.resources
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fComentarios.cs.resources
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\cs\capaPresentacionWF.resources.dll
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fSolicitud.resources
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.MDIRecursos.resources
+C:\Users\harol\Desktop\2020\ProgramacionBD\PRecursos\capaPresentacionWF\obj\Debug\capaPresentacionWF.fUsuario.resources

@@ -120,8 +120,8 @@ namespace capaDatos
                 cm = new SqlCommand("Recurso", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@idrecursos", re.idrecursos);
-                cm.Parameters.AddWithValue("@nombrer", "");
-                cm.Parameters.AddWithValue("@codigo", "");
+                cm.Parameters.AddWithValue("@nombrer", re.nombrer);
+                cm.Parameters.AddWithValue("@codigo", re.codigo);
                 cm.Parameters.AddWithValue("@descripcion", re.descripcion);
 
                 cm.CommandType = CommandType.StoredProcedure;
@@ -171,7 +171,7 @@ namespace capaDatos
             catch (Exception e)
             {
                 e.Message.ToString();
-                indicador = 0;
+                indicador  = 0;
             }
 
             finally
