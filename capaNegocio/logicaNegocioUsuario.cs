@@ -8,7 +8,7 @@ using capaDatos;
 
 namespace capaNegocio
 {
-    class logicaNegocioUsuario
+    public class logicaNegocioUsuario
     {
         accesoDatoUsuario adu = new accesoDatoUsuario();
         public int insertarUsuarios(Usuario U)

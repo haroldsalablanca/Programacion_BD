@@ -187,14 +187,14 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", dato);
                 cm.Parameters.AddWithValue("@nivel", dato);
-                cm.Parameters.AddWithValue("@fechasolicitud", "");
-                cm.Parameters.AddWithValue("@fechauso", "");
-                cm.Parameters.AddWithValue("@horainicio", "");
-                cm.Parameters.AddWithValue("@horafinal", "");
+                cm.Parameters.AddWithValue("@fechasolicitud", dato);
+                cm.Parameters.AddWithValue("@fechauso", dato);
+                cm.Parameters.AddWithValue("@horainicio", dato);
+                cm.Parameters.AddWithValue("@horafinal", dato);
                 cm.Parameters.AddWithValue("@carrera", dato);
                 cm.Parameters.AddWithValue("@asignatura", dato);
-                cm.Parameters.AddWithValue("@idrecursos", "");
-                cm.Parameters.AddWithValue("@idusuario", "");
+                cm.Parameters.AddWithValue("@idrecursos", dato);
+                cm.Parameters.AddWithValue("@idusuario", dato);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();

@@ -1,6 +1,6 @@
 ﻿namespace capaPresentacionWF
 {
-    partial class tabRecursos
+    partial class fRecursos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -222,6 +222,7 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(119, 21);
             this.textBoxBuscar.TabIndex = 3;
+            //            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // buttonEliminar
             // 

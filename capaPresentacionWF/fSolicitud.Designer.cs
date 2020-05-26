@@ -28,269 +28,442 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlSolicitud = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelIdUsuario = new System.Windows.Forms.Label();
+            this.labelIdRecursos = new System.Windows.Forms.Label();
+            this.labelAsignatura = new System.Windows.Forms.Label();
+            this.labelCarrera = new System.Windows.Forms.Label();
+            this.labelHoraFinal = new System.Windows.Forms.Label();
+            this.labelHoraInicio = new System.Windows.Forms.Label();
+            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
+            this.textBoxIdRecursos = new System.Windows.Forms.TextBox();
+            this.textBoxAsignatura = new System.Windows.Forms.TextBox();
+            this.textBoxCarrera = new System.Windows.Forms.TextBox();
+            this.textBoxHoraFinal = new System.Windows.Forms.TextBox();
+            this.textBoxHoraInicio = new System.Windows.Forms.TextBox();
+            this.textBoxFechaUso = new System.Windows.Forms.TextBox();
+            this.textBoxFechaSolicitud = new System.Windows.Forms.TextBox();
+            this.textBoxNivel = new System.Windows.Forms.TextBox();
+            this.textBoxAula = new System.Windows.Forms.TextBox();
+            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.labelFechaUso = new System.Windows.Forms.Label();
+            this.labelFechaSolicitud = new System.Windows.Forms.Label();
+            this.labelNivel = new System.Windows.Forms.Label();
+            this.labelAula = new System.Windows.Forms.Label();
             this.labelId = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.labelRegistrarSolicitud = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridViewSolicitud = new System.Windows.Forms.DataGridView();
+            this.labelBuscar = new System.Windows.Forms.Label();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonBuscar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.tabControlSolicitud.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolicitud)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlSolicitud
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 9F);
-            this.tabControl1.Location = new System.Drawing.Point(13, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(495, 434);
-            this.tabControl1.TabIndex = 0;
+            this.tabControlSolicitud.Controls.Add(this.tabPage1);
+            this.tabControlSolicitud.Controls.Add(this.tabPage2);
+            this.tabControlSolicitud.Font = new System.Drawing.Font("Times New Roman", 9F);
+            this.tabControlSolicitud.Location = new System.Drawing.Point(13, 12);
+            this.tabControlSolicitud.Name = "tabControlSolicitud";
+            this.tabControlSolicitud.SelectedIndex = 0;
+            this.tabControlSolicitud.Size = new System.Drawing.Size(694, 388);
+            this.tabControlSolicitud.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.textBox11);
-            this.tabPage1.Controls.Add(this.textBox10);
-            this.tabPage1.Controls.Add(this.textBox9);
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage1.Controls.Add(this.labelIdUsuario);
+            this.tabPage1.Controls.Add(this.labelIdRecursos);
+            this.tabPage1.Controls.Add(this.labelAsignatura);
+            this.tabPage1.Controls.Add(this.labelCarrera);
+            this.tabPage1.Controls.Add(this.labelHoraFinal);
+            this.tabPage1.Controls.Add(this.labelHoraInicio);
+            this.tabPage1.Controls.Add(this.buttonGuardar);
+            this.tabPage1.Controls.Add(this.textBoxIdUsuario);
+            this.tabPage1.Controls.Add(this.textBoxIdRecursos);
+            this.tabPage1.Controls.Add(this.textBoxAsignatura);
+            this.tabPage1.Controls.Add(this.textBoxCarrera);
+            this.tabPage1.Controls.Add(this.textBoxHoraFinal);
+            this.tabPage1.Controls.Add(this.textBoxHoraInicio);
+            this.tabPage1.Controls.Add(this.textBoxFechaUso);
+            this.tabPage1.Controls.Add(this.textBoxFechaSolicitud);
+            this.tabPage1.Controls.Add(this.textBoxNivel);
+            this.tabPage1.Controls.Add(this.textBoxAula);
+            this.tabPage1.Controls.Add(this.textBoxId);
+            this.tabPage1.Controls.Add(this.labelFechaUso);
+            this.tabPage1.Controls.Add(this.labelFechaSolicitud);
+            this.tabPage1.Controls.Add(this.labelNivel);
+            this.tabPage1.Controls.Add(this.labelAula);
             this.tabPage1.Controls.Add(this.labelId);
-            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.labelRegistrarSolicitud);
+            this.tabPage1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(487, 406);
+            this.tabPage1.Size = new System.Drawing.Size(686, 360);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Text = "Nuevo";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // tabPage2
+            // labelIdUsuario
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(487, 303);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.labelIdUsuario.AutoSize = true;
+            this.labelIdUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelIdUsuario.Location = new System.Drawing.Point(345, 256);
+            this.labelIdUsuario.Name = "labelIdUsuario";
+            this.labelIdUsuario.Size = new System.Drawing.Size(84, 19);
+            this.labelIdUsuario.TabIndex = 24;
+            this.labelIdUsuario.Text = "Id Usuario:";
             // 
-            // label1
+            // labelIdRecursos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(159, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(219, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "REGISTRAR SOLICITUD";
+            this.labelIdRecursos.AutoSize = true;
+            this.labelIdRecursos.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelIdRecursos.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelIdRecursos.Location = new System.Drawing.Point(341, 213);
+            this.labelIdRecursos.Name = "labelIdRecursos";
+            this.labelIdRecursos.Size = new System.Drawing.Size(89, 19);
+            this.labelIdRecursos.TabIndex = 23;
+            this.labelIdRecursos.Text = "Id recursos:";
+            // 
+            // labelAsignatura
+            // 
+            this.labelAsignatura.AutoSize = true;
+            this.labelAsignatura.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelAsignatura.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelAsignatura.Location = new System.Drawing.Point(344, 169);
+            this.labelAsignatura.Name = "labelAsignatura";
+            this.labelAsignatura.Size = new System.Drawing.Size(87, 19);
+            this.labelAsignatura.TabIndex = 22;
+            this.labelAsignatura.Text = "Asignatura:";
+            // 
+            // labelCarrera
+            // 
+            this.labelCarrera.AutoSize = true;
+            this.labelCarrera.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelCarrera.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelCarrera.Location = new System.Drawing.Point(363, 127);
+            this.labelCarrera.Name = "labelCarrera";
+            this.labelCarrera.Size = new System.Drawing.Size(67, 19);
+            this.labelCarrera.TabIndex = 21;
+            this.labelCarrera.Text = "Carrera:";
+            // 
+            // labelHoraFinal
+            // 
+            this.labelHoraFinal.AutoSize = true;
+            this.labelHoraFinal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelHoraFinal.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelHoraFinal.Location = new System.Drawing.Point(74, 252);
+            this.labelHoraFinal.Name = "labelHoraFinal";
+            this.labelHoraFinal.Size = new System.Drawing.Size(81, 19);
+            this.labelHoraFinal.TabIndex = 20;
+            this.labelHoraFinal.Text = "Hora final:";
+            // 
+            // labelHoraInicio
+            // 
+            this.labelHoraInicio.AutoSize = true;
+            this.labelHoraInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelHoraInicio.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelHoraInicio.Location = new System.Drawing.Point(69, 211);
+            this.labelHoraInicio.Name = "labelHoraInicio";
+            this.labelHoraInicio.Size = new System.Drawing.Size(87, 19);
+            this.labelHoraInicio.TabIndex = 19;
+            this.labelHoraInicio.Text = "Hora inicio:";
+            // 
+            // buttonGuardar
+            // 
+            this.buttonGuardar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonGuardar.Location = new System.Drawing.Point(301, 303);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(105, 31);
+            this.buttonGuardar.TabIndex = 18;
+            this.buttonGuardar.Text = "Guardar";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
+            // 
+            // textBoxIdUsuario
+            // 
+            this.textBoxIdUsuario.Location = new System.Drawing.Point(432, 254);
+            this.textBoxIdUsuario.Name = "textBoxIdUsuario";
+            this.textBoxIdUsuario.Size = new System.Drawing.Size(202, 21);
+            this.textBoxIdUsuario.TabIndex = 17;
+            // 
+            // textBoxIdRecursos
+            // 
+            this.textBoxIdRecursos.Location = new System.Drawing.Point(431, 213);
+            this.textBoxIdRecursos.Name = "textBoxIdRecursos";
+            this.textBoxIdRecursos.Size = new System.Drawing.Size(203, 21);
+            this.textBoxIdRecursos.TabIndex = 16;
+            // 
+            // textBoxAsignatura
+            // 
+            this.textBoxAsignatura.Location = new System.Drawing.Point(431, 169);
+            this.textBoxAsignatura.Name = "textBoxAsignatura";
+            this.textBoxAsignatura.Size = new System.Drawing.Size(203, 21);
+            this.textBoxAsignatura.TabIndex = 15;
+            // 
+            // textBoxCarrera
+            // 
+            this.textBoxCarrera.Location = new System.Drawing.Point(431, 127);
+            this.textBoxCarrera.Name = "textBoxCarrera";
+            this.textBoxCarrera.Size = new System.Drawing.Size(203, 21);
+            this.textBoxCarrera.TabIndex = 14;
+            // 
+            // textBoxHoraFinal
+            // 
+            this.textBoxHoraFinal.Location = new System.Drawing.Point(159, 252);
+            this.textBoxHoraFinal.Name = "textBoxHoraFinal";
+            this.textBoxHoraFinal.Size = new System.Drawing.Size(144, 21);
+            this.textBoxHoraFinal.TabIndex = 13;
+            // 
+            // textBoxHoraInicio
+            // 
+            this.textBoxHoraInicio.Location = new System.Drawing.Point(159, 211);
+            this.textBoxHoraInicio.Name = "textBoxHoraInicio";
+            this.textBoxHoraInicio.Size = new System.Drawing.Size(144, 21);
+            this.textBoxHoraInicio.TabIndex = 12;
+            // 
+            // textBoxFechaUso
+            // 
+            this.textBoxFechaUso.Location = new System.Drawing.Point(158, 167);
+            this.textBoxFechaUso.Name = "textBoxFechaUso";
+            this.textBoxFechaUso.Size = new System.Drawing.Size(145, 21);
+            this.textBoxFechaUso.TabIndex = 11;
+            // 
+            // textBoxFechaSolicitud
+            // 
+            this.textBoxFechaSolicitud.Location = new System.Drawing.Point(158, 127);
+            this.textBoxFechaSolicitud.Name = "textBoxFechaSolicitud";
+            this.textBoxFechaSolicitud.Size = new System.Drawing.Size(145, 21);
+            this.textBoxFechaSolicitud.TabIndex = 10;
+            // 
+            // textBoxNivel
+            // 
+            this.textBoxNivel.Location = new System.Drawing.Point(431, 85);
+            this.textBoxNivel.Name = "textBoxNivel";
+            this.textBoxNivel.Size = new System.Drawing.Size(203, 21);
+            this.textBoxNivel.TabIndex = 9;
+            // 
+            // textBoxAula
+            // 
+            this.textBoxAula.Location = new System.Drawing.Point(158, 87);
+            this.textBoxAula.Name = "textBoxAula";
+            this.textBoxAula.Size = new System.Drawing.Size(145, 21);
+            this.textBoxAula.TabIndex = 8;
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(88, 37);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(71, 21);
+            this.textBoxId.TabIndex = 7;
+            // 
+            // labelFechaUso
+            // 
+            this.labelFechaUso.AutoSize = true;
+            this.labelFechaUso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelFechaUso.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelFechaUso.Location = new System.Drawing.Point(73, 167);
+            this.labelFechaUso.Name = "labelFechaUso";
+            this.labelFechaUso.Size = new System.Drawing.Size(81, 19);
+            this.labelFechaUso.TabIndex = 6;
+            this.labelFechaUso.Text = "Fecha uso:";
+            // 
+            // labelFechaSolicitud
+            // 
+            this.labelFechaSolicitud.AutoSize = true;
+            this.labelFechaSolicitud.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelFechaSolicitud.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelFechaSolicitud.Location = new System.Drawing.Point(43, 128);
+            this.labelFechaSolicitud.Name = "labelFechaSolicitud";
+            this.labelFechaSolicitud.Size = new System.Drawing.Size(113, 19);
+            this.labelFechaSolicitud.TabIndex = 5;
+            this.labelFechaSolicitud.Text = "Fecha solicitud:";
+            // 
+            // labelNivel
+            // 
+            this.labelNivel.AutoSize = true;
+            this.labelNivel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelNivel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelNivel.Location = new System.Drawing.Point(379, 86);
+            this.labelNivel.Name = "labelNivel";
+            this.labelNivel.Size = new System.Drawing.Size(50, 19);
+            this.labelNivel.TabIndex = 4;
+            this.labelNivel.Text = "Nivel:";
+            // 
+            // labelAula
+            // 
+            this.labelAula.AutoSize = true;
+            this.labelAula.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.labelAula.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelAula.Location = new System.Drawing.Point(114, 87);
+            this.labelAula.Name = "labelAula";
+            this.labelAula.Size = new System.Drawing.Size(45, 19);
+            this.labelAula.TabIndex = 3;
+            this.labelAula.Text = "Aula:";
             // 
             // labelId
             // 
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.labelId.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelId.Location = new System.Drawing.Point(32, 10);
+            this.labelId.Location = new System.Drawing.Point(56, 37);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(28, 19);
             this.labelId.TabIndex = 2;
             this.labelId.Text = "Id:";
             // 
-            // label3
+            // labelRegistrarSolicitud
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(18, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Aula:";
+            this.labelRegistrarSolicitud.AutoSize = true;
+            this.labelRegistrarSolicitud.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistrarSolicitud.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelRegistrarSolicitud.Location = new System.Drawing.Point(248, 29);
+            this.labelRegistrarSolicitud.Name = "labelRegistrarSolicitud";
+            this.labelRegistrarSolicitud.Size = new System.Drawing.Size(219, 29);
+            this.labelRegistrarSolicitud.TabIndex = 1;
+            this.labelRegistrarSolicitud.Text = "REGISTRAR SOLICITUD";
             // 
-            // label4
+            // tabPage2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(201, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 19);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage2.Controls.Add(this.dataGridViewSolicitud);
+            this.tabPage2.Controls.Add(this.labelBuscar);
+            this.tabPage2.Controls.Add(this.textBoxBuscar);
+            this.tabPage2.Controls.Add(this.buttonEliminar);
+            this.tabPage2.Controls.Add(this.buttonBuscar);
+            this.tabPage2.Controls.Add(this.buttonEditar);
+            this.tabPage2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(686, 360);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Editar";
             // 
-            // label5
+            // dataGridViewSolicitud
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(36, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 19);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "label5";
+            this.dataGridViewSolicitud.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSolicitud.Location = new System.Drawing.Point(15, 93);
+            this.dataGridViewSolicitud.Name = "dataGridViewSolicitud";
+            this.dataGridViewSolicitud.Size = new System.Drawing.Size(651, 220);
+            this.dataGridViewSolicitud.TabIndex = 11;
             // 
-            // label6
+            // labelBuscar
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label6.Location = new System.Drawing.Point(36, 165);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 19);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "label6";
+            this.labelBuscar.AutoSize = true;
+            this.labelBuscar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labelBuscar.Location = new System.Drawing.Point(48, 50);
+            this.labelBuscar.Name = "labelBuscar";
+            this.labelBuscar.Size = new System.Drawing.Size(54, 17);
+            this.labelBuscar.TabIndex = 10;
+            this.labelBuscar.Text = "Buscar";
             // 
-            // textBox1
+            // textBoxBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 21);
-            this.textBox1.TabIndex = 7;
+            this.textBoxBuscar.Location = new System.Drawing.Point(108, 48);
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(185, 21);
+            this.textBoxBuscar.TabIndex = 9;
             // 
-            // textBox2
+            // buttonEliminar
             // 
-            this.textBox2.Location = new System.Drawing.Point(62, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(95, 21);
-            this.textBox2.TabIndex = 8;
+            this.buttonEliminar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.buttonEliminar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonEliminar.Location = new System.Drawing.Point(521, 44);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(87, 31);
+            this.buttonEliminar.TabIndex = 8;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // buttonBuscar
             // 
-            this.textBox3.Location = new System.Drawing.Point(316, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(163, 21);
-            this.textBox3.TabIndex = 9;
+            this.buttonBuscar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonBuscar.Location = new System.Drawing.Point(310, 44);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(87, 31);
+            this.buttonBuscar.TabIndex = 7;
+            this.buttonBuscar.Text = "Buscar";
+            this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
-            // textBox4
+            // buttonEditar
             // 
-            this.textBox4.Location = new System.Drawing.Point(150, 128);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(238, 21);
-            this.textBox4.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(150, 156);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(238, 21);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(150, 184);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(238, 21);
-            this.textBox6.TabIndex = 12;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(150, 212);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 13;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(150, 240);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 14;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(150, 268);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 21);
-            this.textBox9.TabIndex = 15;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(150, 296);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 21);
-            this.textBox10.TabIndex = 16;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(150, 324);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 21);
-            this.textBox11.TabIndex = 17;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(238, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonEditar.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.buttonEditar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonEditar.Location = new System.Drawing.Point(414, 44);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(87, 31);
+            this.buttonEditar.TabIndex = 6;
+            this.buttonEditar.Text = "Editar";
+            this.buttonEditar.UseVisualStyleBackColor = true;
             // 
             // fSolicitud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 448);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(708, 396);
+            this.Controls.Add(this.tabControlSolicitud);
             this.Name = "fSolicitud";
-            this.Text = "fSolicitud";
-            this.tabControl1.ResumeLayout(false);
+            this.Text = "Solicitud";
+            this.Load += new System.EventHandler(this.tabControl1_Click);
+            this.tabControlSolicitud.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSolicitud)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlSolicitud;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelFechaUso;
+        private System.Windows.Forms.Label labelFechaSolicitud;
+        private System.Windows.Forms.Label labelNivel;
+        private System.Windows.Forms.Label labelAula;
         private System.Windows.Forms.Label labelId;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelRegistrarSolicitud;
+        private System.Windows.Forms.TextBox textBoxFechaUso;
+        private System.Windows.Forms.TextBox textBoxFechaSolicitud;
+        private System.Windows.Forms.TextBox textBoxNivel;
+        private System.Windows.Forms.TextBox textBoxAula;
+        private System.Windows.Forms.TextBox textBoxId;
+        private System.Windows.Forms.TextBox textBoxHoraInicio;
+        private System.Windows.Forms.TextBox textBoxIdUsuario;
+        private System.Windows.Forms.TextBox textBoxIdRecursos;
+        private System.Windows.Forms.TextBox textBoxAsignatura;
+        private System.Windows.Forms.TextBox textBoxCarrera;
+        private System.Windows.Forms.TextBox textBoxHoraFinal;
+        private System.Windows.Forms.Button buttonGuardar;
+        private System.Windows.Forms.Label labelHoraInicio;
+        private System.Windows.Forms.Label labelIdRecursos;
+        private System.Windows.Forms.Label labelAsignatura;
+        private System.Windows.Forms.Label labelCarrera;
+        private System.Windows.Forms.Label labelHoraFinal;
+        private System.Windows.Forms.Label labelIdUsuario;
+        private System.Windows.Forms.DataGridView dataGridViewSolicitud;
+        private System.Windows.Forms.Label labelBuscar;
+        private System.Windows.Forms.TextBox textBoxBuscar;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonBuscar;
+        private System.Windows.Forms.Button buttonEditar;
     }
 }

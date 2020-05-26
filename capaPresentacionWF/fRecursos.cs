@@ -12,10 +12,10 @@ using capaEntidades;
 
 namespace capaPresentacionWF
 {
-    public partial class tabRecursos : Form
+    public partial class fRecursos : Form
     {
         logicaNegocioRecursos logicaNR = new logicaNegocioRecursos();
-        public tabRecursos()
+        public fRecursos()
         {
             InitializeComponent();
         }      
