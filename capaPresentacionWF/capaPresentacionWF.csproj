@@ -77,12 +77,6 @@
     <Compile Include="fUsuario.Designer.cs">
       <DependentUpon>fUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDIRecursos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDIRecursos.Designer.cs">
-      <DependentUpon>MDIRecursos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fComentarios.cs.resx">
@@ -102,9 +96,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fUsuario.resx">
       <DependentUpon>fUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MDIRecursos.resx">
-      <DependentUpon>MDIRecursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

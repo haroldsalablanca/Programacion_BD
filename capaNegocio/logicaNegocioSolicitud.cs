@@ -21,9 +21,9 @@ namespace capaNegocio
             return ads.listarSolicitud();
         }
 
-        public int eliminarSolicitud(int idcoment)
+        public int eliminarSolicitud(int idsolicit)
         {
-            return ads.eliminarSolicitud(idcoment);
+            return ads.eliminarSolicitud(idsolicit);
         }
 
         public int editarSolicitud(Solicitud S)

@@ -14,7 +14,7 @@ namespace capaPresentacionWF
 {
     public partial class fSolicitud : Form
     {
-        logicaNegocioSolicitud logicaNR = new logicaNegocioSolicitud();
+        logicaNegocioSolicitud logicaNS = new logicaNegocioSolicitud();
         public fSolicitud()
         {
             InitializeComponent();
@@ -39,10 +39,10 @@ namespace capaPresentacionWF
                     objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIdRecursos.Text);
                     objetoSolicitud.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
 
-                    if (logicaNR.insertarSolicitud(objetoSolicitud) > 0)
+                    if (logicaNS.insertarSolicitud(objetoSolicitud) > 0)
                     {
                         MessageBox.Show("Agregado con éxito");
-                        dataGridViewSolicitud.DataSource = logicaNR.listarSolicitud();
+                        dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
                         textBoxFechaSolicitud.Text = "";
@@ -60,7 +60,7 @@ namespace capaPresentacionWF
                 if (buttonGuardar.Text == "Actualizar")
                 {
                     Solicitud objetoSolicitud = new Solicitud();
-                    //objetoSolicitud.idsolicitud = Convert.ToInt32(textBoxId.Text);
+                    objetoSolicitud.idsolicitud = Convert.ToInt32(textBoxId.Text);
                     objetoSolicitud.aula = textBoxAula.Text;
                     objetoSolicitud.nivel = textBoxNivel.Text;
                     objetoSolicitud.fechasolicitud = Convert.ToDateTime(textBoxFechaSolicitud.Text);
@@ -72,10 +72,10 @@ namespace capaPresentacionWF
                     objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIdRecursos.Text);
                     objetoSolicitud.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
 
-                    if (logicaNR.editarSolicitud(objetoSolicitud) > 0)
+                    if (logicaNS.editarSolicitud(objetoSolicitud) > 0)
                     {
                         MessageBox.Show("Actualizado con éxito");
-                        dataGridViewSolicitud.DataSource = logicaNR.listarSolicitud();
+                        dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
                         textBoxFechaSolicitud.Text = "";
@@ -106,13 +106,13 @@ namespace capaPresentacionWF
         {
             textBoxId.Visible = false;
             labelId.Visible = false;
-            dataGridViewSolicitud.DataSource = logicaNR.listarSolicitud();
+            dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
         }
 
         //Boton Buscar en Detalle de Solicitud
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
-            List<Solicitud> listaSolicitud = logicaNR.buscarSolicitud(textBoxBuscar.Text);
+            List<Solicitud> listaSolicitud = logicaNS.buscarSolicitud(textBoxBuscar.Text);
             dataGridViewSolicitud.DataSource = listaSolicitud;
         }
 
@@ -140,24 +140,19 @@ namespace capaPresentacionWF
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-            int codigoS = Convert.ToInt32(dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString());
+            int codigoR = Convert.ToInt32(dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString());
             try
             {
-                if (logicaNR.eliminarSolicitud(codigoS) > 0)
+                if (logicaNS.eliminarSolicitud(codigoR) > 0)
                 {
                     MessageBox.Show("Eliminado con éxito!");
-                    dataGridViewSolicitud.DataSource = logicaNR.listarSolicitud();
+                    dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
                 }
             }
             catch
             {
                 MessageBox.Show("Error al elminar Solicitud");
             }
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

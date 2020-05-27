@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlRecursos = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
@@ -47,22 +47,22 @@
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.tabControlRecursos.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecursos)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlRecursos
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(1, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(495, 340);
-            this.tabControl1.TabIndex = 0;
+            this.tabControlRecursos.Controls.Add(this.tabPage1);
+            this.tabControlRecursos.Controls.Add(this.tabPage2);
+            this.tabControlRecursos.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlRecursos.Location = new System.Drawing.Point(1, 2);
+            this.tabControlRecursos.Name = "tabControlRecursos";
+            this.tabControlRecursos.SelectedIndex = 0;
+            this.tabControlRecursos.Size = new System.Drawing.Size(495, 340);
+            this.tabControlRecursos.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -222,7 +222,6 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(119, 21);
             this.textBoxBuscar.TabIndex = 3;
-            //            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // buttonEliminar
             // 
@@ -260,16 +259,16 @@
             this.buttonEditar.UseVisualStyleBackColor = true;
             this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
-            // tabRecursos
+            // fRecursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 342);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "tabRecursos";
+            this.Controls.Add(this.tabControlRecursos);
+            this.Name = "fRecursos";
             this.Text = "Recursos";
             this.Load += new System.EventHandler(this.tabControl1_Click);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlRecursos.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -281,7 +280,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlRecursos;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;

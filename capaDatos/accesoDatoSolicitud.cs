@@ -33,8 +33,8 @@ namespace capaDatos
                 cm.Parameters.AddWithValue("@horafinal", S.horafinal);
                 cm.Parameters.AddWithValue("@carrera", S.carrera);
                 cm.Parameters.AddWithValue("@asignatura", S.asignatura);
-                cm.Parameters.AddWithValue("@idrecursos", "");
-                cm.Parameters.AddWithValue("@idusuario", "");
+                cm.Parameters.AddWithValue("@idrecursos", S.idrecursos);
+                cm.Parameters.AddWithValue("@idusuario", S.idusuario);
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -81,14 +81,14 @@ namespace capaDatos
                     c.idsolicitud = Convert.ToInt32(dr["idsolicitud"].ToString());
                     c.aula = dr["aula"].ToString();
                     c.nivel = dr["nivel"].ToString();
-                    c.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"].ToString());    //Consultar
-                    c.fechauso = Convert.ToDateTime(dr["fechauso"].ToString());                //Consultar
+                    c.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"]);    //Consultar
+                    c.fechauso = Convert.ToDateTime(dr["fechauso"]);                //Consultar
                     c.horainicio = Convert.ToDateTime(dr["horainicio"]);            //Consultar
                     c.horafinal = Convert.ToDateTime(dr["horafinal"]);              //Consultar
                     c.carrera = dr["carrera"].ToString();
                     c.asignatura = dr["asignatura"].ToString();
-                    c.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
-                    c.idusuario = Convert.ToInt32(dr["idrecursos"].ToString());
+                    c.idrecursos = Convert.ToInt32(dr["idrecursos"]);
+                    c.idusuario = Convert.ToInt32(dr["idrecursos"]);
                     listaSolicitudes.Add(c);
                 }
             }
@@ -212,8 +212,8 @@ namespace capaDatos
                     c.horafinal = Convert.ToDateTime(dr["horafinal"]);              //Consultar
                     c.carrera = dr["carrera"].ToString();
                     c.asignatura = dr["asignatura"].ToString();
-                    c.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
-                    c.idusuario = Convert.ToInt32(dr["idrecursos"].ToString());
+                    c.idrecursos = Convert.ToInt32(dr["idrecursos"]);
+                    c.idusuario = Convert.ToInt32(dr["idrecursos"]);
                     listaSolicitudes.Add(c);
                 }
             }

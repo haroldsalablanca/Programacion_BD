@@ -26,7 +26,7 @@ namespace capaPresentacionWF
                 if (buttonGuardar.Text == "Guardar")
                 {
                     Recursos objetoRecurso = new Recursos();
-                  //objetoRecurso.idrecursos = textBoxId.Text;
+                    //objetoRecurso.idrecursos = Convert.ToInt32(textBoxId.Text);
                     objetoRecurso.nombrer = textBoxNombrer.Text;
                     objetoRecurso.codigo = textBoxCodigo.Text;
                     objetoRecurso.descripcion = textBoxDescripcion.Text;
@@ -35,11 +35,11 @@ namespace capaPresentacionWF
                     {
                         MessageBox.Show("Agregado con éxito");
                         dataGridViewRecursos.DataSource = logicaNR.listarRecursos();
-                      //textBoxId.Text = "";
+                        //textBoxId.Text = "";
                         textBoxNombrer.Text = "";
                         textBoxCodigo.Text = "";
                         textBoxDescripcion.Text = "";
-                        tabControl1.SelectedTab = tabPage2; //Consultar
+                        tabControlRecursos.SelectedTab = tabPage2; //Consultar
                     }
                     else { MessageBox.Show("Error al agregar Recurso"); }
                 }
@@ -58,7 +58,7 @@ namespace capaPresentacionWF
                         textBoxNombrer.Text = "";
                         textBoxCodigo.Text = "";
                         textBoxDescripcion.Text = "";   
-                        tabControl1.SelectedTab = tabPage2;
+                        tabControlRecursos.SelectedTab = tabPage2;
                     }
                     else
                     {
@@ -99,7 +99,7 @@ namespace capaPresentacionWF
             textBoxCodigo.Text = dataGridViewRecursos.CurrentRow.Cells["codigo"].Value.ToString();
             textBoxDescripcion.Text = dataGridViewRecursos.CurrentRow.Cells["descripcion"].Value.ToString();
 
-            tabControl1.SelectedTab = tabPage1;
+            tabControlRecursos.SelectedTab = tabPage1;
             buttonGuardar.Text = "Actualizar";
         }
 
