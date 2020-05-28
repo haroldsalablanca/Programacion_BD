@@ -11,10 +11,10 @@ namespace capaEntidades
         public int idsolicitud { get; set; }
         public string aula { get; set; }
         public string nivel { get; set; }
-        public DateTime fechasolicitud { get; set; }
-        public DateTime fechauso { get; set; }
-        public DateTime horainicio { get; set; }
-        public DateTime horafinal { get; set; }
+        public string fechasolicitud { get; set; }
+        public string fechauso { get; set; }
+        public string horainicio { get; set; }
+        public string horafinal { get; set; }
         public string carrera { get; set; }
         public string asignatura { get; set; }
         public int idrecursos { get; set; }

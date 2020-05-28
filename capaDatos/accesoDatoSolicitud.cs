@@ -9,7 +9,7 @@ namespace capaDatos
     public class accesoDatoSolicitud
     {
         SqlConnection cnx;
-        Solicitud s = new Solicitud();
+        Solicitud r = new Solicitud();
         Conexion cn = new Conexion();
         SqlCommand cm = null;
         int indicador = 0;
@@ -81,14 +81,14 @@ namespace capaDatos
                     c.idsolicitud = Convert.ToInt32(dr["idsolicitud"].ToString());
                     c.aula = dr["aula"].ToString();
                     c.nivel = dr["nivel"].ToString();
-                    c.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"]);    //Consultar
-                    c.fechauso = Convert.ToDateTime(dr["fechauso"]);                //Consultar
-                    c.horainicio = Convert.ToDateTime(dr["horainicio"]);            //Consultar
-                    c.horafinal = Convert.ToDateTime(dr["horafinal"]);              //Consultar
+                    c.fechasolicitud = dr["fechasolicitud"].ToString();    //Consultar
+                    c.fechauso = dr["fechauso"].ToString();                //Consultar
+                    c.horainicio = dr["horainicio"].ToString();            //Consultar
+                    c.horafinal = dr["horafinal"].ToString();              //Consultar
                     c.carrera = dr["carrera"].ToString();
                     c.asignatura = dr["asignatura"].ToString();
-                    c.idrecursos = Convert.ToInt32(dr["idrecursos"]);
-                    c.idusuario = Convert.ToInt32(dr["idrecursos"]);
+                    c.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
+                    c.idusuario = Convert.ToInt32(dr["idrecursos"].ToString());
                     listaSolicitudes.Add(c);
                 }
             }
@@ -206,14 +206,14 @@ namespace capaDatos
                     c.idsolicitud = Convert.ToInt32(dr["idsolicitud"].ToString());
                     c.aula = dr["aula"].ToString();
                     c.nivel = dr["nivel"].ToString();
-                    c.fechasolicitud = Convert.ToDateTime(dr["fechasolicitud"]);    //Consultar
-                    c.fechauso = Convert.ToDateTime(dr["fechauso"]);                //Consultar
-                    c.horainicio = Convert.ToDateTime(dr["horainicio"]);            //Consultar
-                    c.horafinal = Convert.ToDateTime(dr["horafinal"]);              //Consultar
+                    c.fechasolicitud = dr["fechasolicitud"].ToString();    //Consultar
+                    c.fechauso = dr["fechauso"].ToString();                //Consultar
+                    c.horainicio = dr["horainicio"].ToString();            //Consultar
+                    c.horafinal = dr["horafinal"].ToString();              //Consultar
                     c.carrera = dr["carrera"].ToString();
                     c.asignatura = dr["asignatura"].ToString();
-                    c.idrecursos = Convert.ToInt32(dr["idrecursos"]);
-                    c.idusuario = Convert.ToInt32(dr["idrecursos"]);
+                    c.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
+                    c.idusuario = Convert.ToInt32(dr["idrecursos"].ToString());
                     listaSolicitudes.Add(c);
                 }
             }
@@ -226,7 +226,6 @@ namespace capaDatos
             finally
             { cm.Connection.Close(); }
             return listaSolicitudes;
-
         }
     }
 }

@@ -30,19 +30,20 @@ namespace capaPresentacionWF
                     //objetoSolicitud.idsolicitud = Convert.ToInt32(textBoxId.Text);
                     objetoSolicitud.aula = textBoxAula.Text;
                     objetoSolicitud.nivel = textBoxNivel.Text;
-                    objetoSolicitud.fechasolicitud = Convert.ToDateTime(textBoxFechaSolicitud.Text);
-                    objetoSolicitud.fechauso = Convert.ToDateTime(textBoxFechaUso.Text);
-                    objetoSolicitud.horainicio = Convert.ToDateTime(textBoxHoraInicio.Text);
-                    objetoSolicitud.horafinal = Convert.ToDateTime(textBoxHoraFinal.Text);
-                    objetoSolicitud.carrera = (textBoxCarrera.Text);
-                    objetoSolicitud.asignatura = (textBoxAsignatura.Text);
-                    objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIdRecursos.Text);
-                    objetoSolicitud.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
+                    objetoSolicitud.fechasolicitud = textBoxFechaSolicitud.Text;
+                    objetoSolicitud.fechauso = textBoxFechaUso.Text;
+                    objetoSolicitud.horainicio = textBoxHoraInicio.Text;
+                    objetoSolicitud.horafinal = textBoxHoraFinal.Text;
+                    objetoSolicitud.carrera = textBoxCarrera.Text;
+                    objetoSolicitud.asignatura = textBoxAsignatura.Text;
+                    objetoSolicitud.idrecursos = Convert.ToInt32((textBoxIdRecursos.Text).ToString());
+                    objetoSolicitud.idusuario = Convert.ToInt32((textBoxIdUsuario.Text).ToString());
 
                     if (logicaNS.insertarSolicitud(objetoSolicitud) > 0)
                     {
                         MessageBox.Show("Agregado con éxito");
                         dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+                        //textBoxId.Text = "";
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
                         textBoxFechaSolicitud.Text = "";
@@ -60,22 +61,23 @@ namespace capaPresentacionWF
                 if (buttonGuardar.Text == "Actualizar")
                 {
                     Solicitud objetoSolicitud = new Solicitud();
-                    objetoSolicitud.idsolicitud = Convert.ToInt32(textBoxId.Text);
+                    objetoSolicitud.idsolicitud = Convert.ToInt32((textBoxId.Text).ToString());
                     objetoSolicitud.aula = textBoxAula.Text;
                     objetoSolicitud.nivel = textBoxNivel.Text;
-                    objetoSolicitud.fechasolicitud = Convert.ToDateTime(textBoxFechaSolicitud.Text);
-                    objetoSolicitud.fechauso = Convert.ToDateTime(textBoxFechaUso.Text);
-                    objetoSolicitud.horainicio = Convert.ToDateTime(textBoxHoraInicio.Text);
-                    objetoSolicitud.horafinal = Convert.ToDateTime(textBoxHoraFinal.Text);
-                    objetoSolicitud.carrera = (textBoxCarrera.Text);
-                    objetoSolicitud.asignatura = (textBoxAsignatura.Text);
-                    objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIdRecursos.Text);
-                    objetoSolicitud.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
+                    objetoSolicitud.fechasolicitud = textBoxFechaSolicitud.Text;
+                    objetoSolicitud.fechauso = textBoxFechaUso.Text;
+                    objetoSolicitud.horainicio = textBoxHoraInicio.Text;
+                    objetoSolicitud.horafinal = textBoxHoraFinal.Text;
+                    objetoSolicitud.carrera = textBoxCarrera.Text;
+                    objetoSolicitud.asignatura = textBoxAsignatura.Text;
+                    objetoSolicitud.idrecursos = Convert.ToInt32((textBoxIdRecursos.Text).ToString());
+                    objetoSolicitud.idusuario = Convert.ToInt32((textBoxIdUsuario.Text).ToString());
 
                     if (logicaNS.editarSolicitud(objetoSolicitud) > 0)
                     {
                         MessageBox.Show("Actualizado con éxito");
                         dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+                        //textBoxId.Text = "";
                         textBoxAula.Text = "";
                         textBoxNivel.Text = "";
                         textBoxFechaSolicitud.Text = "";
@@ -116,7 +118,7 @@ namespace capaPresentacionWF
             dataGridViewSolicitud.DataSource = listaSolicitud;
         }
 
-        private void buttonEditar_Click(object sender, EventArgs e)
+        private void buttonEditar_Click_1(object sender, EventArgs e)
         {
             textBoxId.Visible = true;
             textBoxId.Enabled = false;
@@ -138,7 +140,7 @@ namespace capaPresentacionWF
             buttonGuardar.Text = "Actualizar";
         }
 
-        private void buttonEliminar_Click(object sender, EventArgs e)
+        private void buttonEliminar_Click_1(object sender, EventArgs e)
         {
             int codigoR = Convert.ToInt32(dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString());
             try

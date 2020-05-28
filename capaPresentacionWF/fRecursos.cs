@@ -119,5 +119,6 @@ namespace capaPresentacionWF
                 MessageBox.Show("ERROR al elminar recurso");
             }
         }
+
     }
 }
