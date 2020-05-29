@@ -150,7 +150,7 @@
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonGuardar.Location = new System.Drawing.Point(351, 350);
+            this.buttonGuardar.Location = new System.Drawing.Point(351, 351);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(122, 36);
             this.buttonGuardar.TabIndex = 18;
