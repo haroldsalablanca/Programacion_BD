@@ -57,7 +57,7 @@
             // 
             this.tabControlRecursos.Controls.Add(this.tabPage1);
             this.tabControlRecursos.Controls.Add(this.tabPage2);
-            this.tabControlRecursos.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlRecursos.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControlRecursos.Location = new System.Drawing.Point(1, 2);
             this.tabControlRecursos.Name = "tabControlRecursos";
             this.tabControlRecursos.SelectedIndex = 0;
@@ -66,7 +66,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage1.BackColor = System.Drawing.Color.LightGreen;
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.textBoxDescripcion);
             this.tabPage1.Controls.Add(this.textBoxCodigo);
@@ -78,17 +78,17 @@
             this.tabPage1.Controls.Add(this.labelId);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(487, 312);
+            this.tabPage1.Size = new System.Drawing.Size(487, 310);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
             // 
             // buttonGuardar
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonGuardar.Location = new System.Drawing.Point(209, 260);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(105, 31);
@@ -109,28 +109,28 @@
             // 
             this.textBoxCodigo.Location = new System.Drawing.Point(152, 144);
             this.textBoxCodigo.Name = "textBoxCodigo";
-            this.textBoxCodigo.Size = new System.Drawing.Size(214, 21);
+            this.textBoxCodigo.Size = new System.Drawing.Size(214, 25);
             this.textBoxCodigo.TabIndex = 7;
             // 
             // textBoxNombrer
             // 
             this.textBoxNombrer.Location = new System.Drawing.Point(152, 105);
             this.textBoxNombrer.Name = "textBoxNombrer";
-            this.textBoxNombrer.Size = new System.Drawing.Size(214, 21);
+            this.textBoxNombrer.Size = new System.Drawing.Size(214, 25);
             this.textBoxNombrer.TabIndex = 6;
             // 
             // textBoxId
             // 
             this.textBoxId.Location = new System.Drawing.Point(152, 72);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(214, 21);
+            this.textBoxId.Size = new System.Drawing.Size(214, 25);
             this.textBoxId.TabIndex = 5;
             // 
             // labelDescripcion
             // 
             this.labelDescripcion.AutoSize = true;
             this.labelDescripcion.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescripcion.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelDescripcion.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelDescripcion.Location = new System.Drawing.Point(53, 181);
             this.labelDescripcion.Name = "labelDescripcion";
             this.labelDescripcion.Size = new System.Drawing.Size(93, 19);
@@ -141,7 +141,7 @@
             // 
             this.labelCodigo.AutoSize = true;
             this.labelCodigo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCodigo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelCodigo.ForeColor = System.Drawing.SystemColors.Desktop;
             this.labelCodigo.Location = new System.Drawing.Point(81, 144);
             this.labelCodigo.Name = "labelCodigo";
             this.labelCodigo.Size = new System.Drawing.Size(61, 19);
@@ -152,8 +152,8 @@
             // 
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.labelNombre.Location = new System.Drawing.Point(73, 104);
+            this.labelNombre.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.labelNombre.Location = new System.Drawing.Point(75, 104);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(68, 19);
             this.labelNombre.TabIndex = 2;
@@ -163,7 +163,7 @@
             // 
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelId.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.labelId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelId.Location = new System.Drawing.Point(112, 74);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(23, 19);
@@ -173,8 +173,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(151, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 29);
@@ -191,10 +191,10 @@
             this.tabPage2.Controls.Add(this.buttonBuscar);
             this.tabPage2.Controls.Add(this.buttonEditar);
             this.tabPage2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(487, 312);
+            this.tabPage2.Size = new System.Drawing.Size(487, 310);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Detalle";
             // 
@@ -220,7 +220,7 @@
             // 
             this.textBoxBuscar.Location = new System.Drawing.Point(96, 34);
             this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(119, 21);
+            this.textBoxBuscar.Size = new System.Drawing.Size(119, 25);
             this.textBoxBuscar.TabIndex = 3;
             // 
             // buttonEliminar
