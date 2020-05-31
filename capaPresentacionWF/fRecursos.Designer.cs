@@ -137,7 +137,7 @@
             this.labelDescripcion.BackColor = System.Drawing.Color.Orange;
             this.labelDescripcion.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.labelDescripcion.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.labelDescripcion.Location = new System.Drawing.Point(54, 162);
+            this.labelDescripcion.Location = new System.Drawing.Point(55, 162);
             this.labelDescripcion.Name = "labelDescripcion";
             this.labelDescripcion.Size = new System.Drawing.Size(112, 22);
             this.labelDescripcion.TabIndex = 4;
