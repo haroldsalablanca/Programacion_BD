@@ -153,7 +153,7 @@ namespace capaPresentacionWF
             }
             catch
             {
-                MessageBox.Show("Error al elminar Solicitud");
+                MessageBox.Show("Error al eliminar Solicitud");
             }
         }
     }
